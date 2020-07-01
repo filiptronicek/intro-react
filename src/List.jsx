@@ -4,7 +4,7 @@ class List extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: "",
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -17,7 +17,7 @@ class List extends React.Component {
 
   handleSubmit(event) {
     this.setState({
-      value: ""
+      value: "",
     });
 
     this.props.addFunction(this.state.value);
@@ -27,7 +27,7 @@ class List extends React.Component {
   render() {
     return (
       <div className="col-6 mx-auto">
-        <p className="h2">REPLACE THIS TITLE WITH A PROP</p> 
+        <p className="h2">{this.props.title}</p>
         <form onSubmit={this.handleSubmit}>
           <label>
             <input

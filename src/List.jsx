@@ -4,7 +4,7 @@ class List extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ""
+      value: "",
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -17,7 +17,7 @@ class List extends React.Component {
 
   handleSubmit(event) {
     this.setState({
-      value: ""
+      value: "",
     });
 
     this.props.addFunction(this.state.value);

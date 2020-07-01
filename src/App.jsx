@@ -9,7 +9,7 @@ class App extends React.Component {
     this.state = {
       buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable*/,
-      grades: {}
+      grades: {},
     };
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
@@ -21,14 +21,14 @@ class App extends React.Component {
 
   handleButtonClicked(buttonName) {
     this.setState({
-      buttonClicked: buttonName
+      buttonClicked: buttonName,
     });
   }
 
   /*Check out this addAssignment method*/
   addAssignment(assignmentName) {
     this.setState({
-      assignments: this.state.assignments.concat(assignmentName)
+      assignments: this.state.assignments.concat(assignmentName),
     });
   }
 
@@ -65,7 +65,7 @@ class App extends React.Component {
     /*if (this.state.buttonClicked === "students") {
       tabChoice = (
         <List
-          placeholder="Add Assignment..." 
+          placeholder="Add Assignment..."
           currList={this.state.assignments}
           addFunction={this.addAssignment}
           title="Student Roster"
